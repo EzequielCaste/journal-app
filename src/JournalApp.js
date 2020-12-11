@@ -1,5 +1,6 @@
 import './App.css';
 import { AppRouter } from './routers/AppRouter';
+import './styles/styles.scss'
 
 function JournalApp() {
   return (
