@@ -1,11 +1,16 @@
+import { Provider } from 'react-redux';
 import './App.css';
 import { AppRouter } from './routers/AppRouter';
-import './styles/styles.scss'
+import { store } from './store/store';
+import './styles/styles.scss';
+
 
 function JournalApp() {
   return (
     <div className="App">
-      <AppRouter />
+      <Provider store={store} >
+        <AppRouter />
+      </Provider>
     </div>
   );
 }
