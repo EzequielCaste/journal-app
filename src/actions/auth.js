@@ -7,3 +7,11 @@ export const login = (uid, displayName) => ({
     displayName
   }
 });
+
+export const startLoginEmailPassword = (email, password) => {
+  return (dispatch) => {
+    setTimeout(() => {
+      dispatch(login(123, 'Pedro'))
+    }, 3500)
+  }
+}
